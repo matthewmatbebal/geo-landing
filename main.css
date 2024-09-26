@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+} 
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+    
+body {
+    background: linear-gradient(to top, #e0ffff, #ffffff); /* Мягкий переход аквамарина к белому */
+    margin-right: 120px;
+    margin-left: 120px;
+    font-family: 'Inter';
+}
+.wrapper {
+    justify-content: space-between;
+
+}
+
+.iphone-wrapper {
+    background-image: url(img/iPhone\ 15\ -\ Blue.png);
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 454px;
+    background-color: white;
+    border-radius: 32px;
+}
+
+.telegram-icon {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.iphone-header-wrapper {
+    padding-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.user-name {
+    font-weight: 700;
+}
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+}
+
+.profit-wrapper {
+    font-size: 14px;
+    margin-left: 12px;
+    margin-right: 12px;
+    background-color: aquamarine;
+    text-align: center;
+    height: 44px;
+    justify-content: center;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+.profit {
+    font-weight: 600;
+}
+
+section {
+    margin-top: 50px;
+}
+
+.counter-wrapper {
+    text-align: center;
+    margin-left: 12px;
+    margin-right: 12px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 24px;
+}
+
+.gif-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.gif-wrapper img {
+    width: 70%;
+}
+
+.farm-button {
+    font-size: 14px;
+    margin-left: 12px;
+    margin-right: 12px;
+    background-color: #7fffd4;
+    text-align: center;
+    justify-content: center;
+    height: 44px;
+    border-radius: 8px;
+    margin-top: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.farm-button:hover  {
+    font-size: 16px;
+    transition: font-size 0.3s ease;
+}
+
+.nav-wrapper {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-wrapper img {
+    width: 32px;
+    height: 32px;
+}
+
+.nav-elem {
+    cursor: pointer;
+    background-color: #5C9191;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}
+
+.right-part-wrapper {
+    width: 70%;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.info-title {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 24px;
+}
+
+.info-el img {
+    padding-bottom: 16px;
+    width: 100px;
+    height: 100px;
+}
+
+.info-el {
+    align-items: center;
+    justify-content: start;
+}
+
+.el-descr {
+    font-size: 16px;
+    max-width: 150px;
+    text-align: center;
+}
+
+.info-elements-wrapper {
+    justify-content: space-between;
+}
+
+.big-alert {
+    font-size: 32px;
+    font-weight: 700;
+    background: #7fffd4;
+    border-radius: 8px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    transition: background 0.3s ease, font-size 0.3s ease;
+}
+
+.big-alert:hover {
+    font-size: 34px; /* увеличиваем размер текста */
+}
+
+.roadmap-title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 48px;
+}
+
+
+
+
+
+
+.timeline {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    position: relative;
+    padding-left: 50px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #007f7f;
+    border-radius: 50%;
+}
+
+.date {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.content {
+    background-color: #7fffd4;
+    padding: 20px;
+    width: 100%;
+    border-left: 5px solid #007f7f;
+    border-radius: 8px;
+    width: 70%;
+    transition: background-color 0.3s ease, border-left 0.3s ease;
+}
+
+.content h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.content p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.timeline-item:hover .content {
+    background-color: #b2f4f4;
+    border-left: 5px solid #00baba;
+}
+
+.timeline-item:hover::before {
+    background-color: #00baba;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.media-wrapper {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+.tg-elem, .x-elem {
+    width: 50px;
+    height: 50px;
+    border: 3px solid aquamarine;
+    border-radius: 50%; /* Закругленные элементы */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Анимация при наведении */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+    background-color: white; /* Фон элемента */
+}
+
+.tg-elem a, .x-elem a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: background-color 0.3s; /* Плавная смена цвета фона */
+}
+
+.tg-elem:hover, .x-elem:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Больше тени при наведении */
+}
+
+.tg-elem:hover a, .x-elem:hover a {
+    /* background-color: aquamarine; Цвет фона при наведении */
+}
+
+.tg-elem svg, .x-elem svg {
+    fill: #000; /* Цвет иконки */
+    transition: fill 0.3s; /* Плавная смена цвета иконки */
+}
+
+.tg-elem:hover svg, .x-elem:hover svg {
+    fill: #000; /* Цвет иконки при наведении */
+}
+
+.media-wrapper a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.right-part-wrapper a {
+    color: unset;
+    text-decoration: none;
+}
